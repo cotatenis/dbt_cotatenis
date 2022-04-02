@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: cotatenis_dev
+    database: COTATENIS_DEV
+    schema: RAW
+    tables:
+      - name: raw_farfetch
+        columns:
+          - name: payload
+      - name: raw_gdlp
+        columns:
+          - name: payload
+      - name: raw_kings
+        columns:
+          - name: payload
+      - name: raw_maze
+        columns:
+          - name: payload
+      - name: raw_pineapple
+        columns:
+          - name: payload
+      - name: raw_shop2gether
+        columns:
+          - name: payload
+      - name: raw_yourid
+        columns:
+          - name: payload
