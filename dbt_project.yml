@@ -34,5 +34,6 @@ models:
     # Config indicated by + and applies to all files under models/example/
     cotatenis:
       dev:
-        raw:
-          +materialized: view
+        staging:
+          sneakers:
+            +materialized: view
