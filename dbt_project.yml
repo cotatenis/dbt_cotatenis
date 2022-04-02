@@ -31,9 +31,7 @@ clean-targets: # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   dbt_cotatenis_dev:
-    # Config indicated by + and applies to all files under models/example/
-    cotatenis:
-      dev:
-        staging:
-          sneakers:
-            +materialized: view
+    dev:
+      staging:
+        sneakers:
+          +materialized: table
