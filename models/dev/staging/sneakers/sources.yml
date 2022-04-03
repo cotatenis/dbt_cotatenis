@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-  - name: cotatenis_dev
-    database: COTATENIS_DEV
+  - name: cotatenis_source
+    database: COTATENIS_SOURCE
     schema: RAW
     tables:
       - name: raw_farfetch

@@ -12,7 +12,7 @@ select
     , payload:spider_version::text spider_version
     , payload:timestamp::timestamp as collected_at
     , payload:url::text as url
-FROM {{ source('cotatenis_dev', 'raw_farfetch') }}
+FROM {{ source('cotatenis_source', 'raw_farfetch') }}
 WHERE 
     payload:price is not null AND 
     payload:sku is not null AND
