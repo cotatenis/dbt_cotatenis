@@ -167,3 +167,36 @@ models:
         description: source url
         tests:
           - not_null
+  - name: stg_pineapple
+    description: Staged sneakers data from cotatenis/pineapple.
+    columns:
+      - name: product
+        description: product name.
+        tests:
+          - not_null
+      - name: brand
+        description: product brand
+      - name: sku
+        description: product identifier
+        tests:
+          - not_null
+      - name: description
+        description: product description
+      - name: is_available
+        description: boolean to identify if the product is available
+      - name: price
+        description: product price.
+        tests:
+          - not_null
+      - name: size
+        description: product size.
+        tests:
+          - not_null
+      - name: collected_at
+        description: timestamp for which that data was collected
+        tests:
+          - not_null
+      - name: url
+        description: source url
+        tests:
+          - not_null
