@@ -124,3 +124,46 @@ models:
         description: source url
         tests:
           - not_null
+  - name: stg_gdlp
+    description: Staged sneakers data from cotatenis/gdlp.
+    columns:
+      - name: product
+        description: product name.
+        tests:
+          - not_null
+      - name: product_info
+        description: complementary data, price included.
+        tests:
+          - not_null
+      - name: sku
+        description: product identifier
+        tests:
+          - not_null
+      - name: genre
+        description: product genre
+      - name: description
+        description: product description
+      - name: sizes_and_stock
+        description: information about sizes and availability
+      - name: reference_first_image
+        description: image to be used in the thumbnail in the search page
+      - name: image_uris
+        description: URI images
+      - name: image_urls
+        description: url of source images
+      - name: spider
+        description: spider name.
+        tests:
+          - not_null
+      - name: spider_version
+        description: spider version.
+        tests:
+          - not_null
+      - name: collected_at
+        description: timestamp for which that data was collected
+        tests:
+          - not_null
+      - name: url
+        description: source url
+        tests:
+          - not_null
