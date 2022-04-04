@@ -2,7 +2,7 @@ select
       payload:product::text as product
     , payload:sku::text as sku
     , payload:brand::text as brand
-    , payload:description as description
+    , payload:description::text as description
     , payload:has_stock::boolean as is_available
     , payload:price::float as price
     , payload:image_uris as image_uris

@@ -3,7 +3,7 @@ select
     , payload:product_info::variant as product_info
     , payload:sku::text as sku
     , payload:genre::text as genre
-    , payload:description as description
+    , payload:description::text as description
     , payload:sizes_and_stock::variant as sizes_and_stock
     , payload:reference_first_image::text as reference_first_image
     , payload:image_uris as image_uris
