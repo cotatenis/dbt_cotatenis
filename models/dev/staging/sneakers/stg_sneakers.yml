@@ -20,6 +20,8 @@ models:
         description: product price.
         tests:
           - not_null
+      - name: variants
+        description: object with additional information, size and stock info included.
       - name: published_at
         description: timestamp for the publishing act
       - name: reference_first_image
