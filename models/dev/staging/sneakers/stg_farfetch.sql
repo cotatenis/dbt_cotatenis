@@ -8,13 +8,9 @@ select
     , payload:size::float as size
     , payload:img_search_page::text as reference_first_image
     , payload:image_uris as image_uris
-    , payload:spider::text spider
-    , payload:spider_version::text spider_version
     , payload:timestamp::timestamp as collected_at
     , payload:url::text as url
 FROM {{ source('cotatenis_source', 'raw_farfetch') }}
 WHERE 
     payload:price is not null AND 
-    payload:sku is not null AND
-    payload:spider is not null AND
-    payload:spider_version is not null 
+    payload:sku is not null
