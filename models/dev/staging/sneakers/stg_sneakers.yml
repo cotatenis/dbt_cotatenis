@@ -200,3 +200,46 @@ models:
         description: source url
         tests:
           - not_null
+  - name: stg_shop2gether
+    description: Staged sneakers data from cotatenis/shop2gether.
+    columns:
+      - name: product
+        description: product name.
+        tests:
+          - not_null
+      - name: brand
+        description: product brand
+      - name: sku
+        description: product identifier
+        tests:
+          - not_null
+      - name: description
+        description: product description
+      - name: price
+        description: product price.
+        tests:
+          - not_null
+      - name: stock_info
+        description: object with additional information, stock availability included.
+        tests:
+          - not_null
+      - name: reference_first_image
+        description: image to be used in the thumbnail in the search page
+      - name: image_uris
+        description: collection of images
+      - name: spider
+        description: spider name.
+        tests:
+          - not_null
+      - name: spider_version
+        description: spider version.
+        tests:
+          - not_null
+      - name: collected_at
+        description: timestamp for which that data was collected
+        tests:
+          - not_null
+      - name: url
+        description: source url
+        tests:
+          - not_null

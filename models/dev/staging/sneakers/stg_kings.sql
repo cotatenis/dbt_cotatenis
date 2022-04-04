@@ -1,7 +1,7 @@
 select 
       payload:title::text as product
     , payload:sku::text as sku
-    , payload:description as description
+    , payload:description::text as description
     , payload:available::boolean as is_available
     , payload:price::float as price
     , payload:created_at::timestamp as created_at
