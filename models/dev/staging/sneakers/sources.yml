@@ -23,6 +23,3 @@ sources:
       - name: raw_shop2gether
         columns:
           - name: payload
-      - name: raw_yourid
-        columns:
-          - name: payload

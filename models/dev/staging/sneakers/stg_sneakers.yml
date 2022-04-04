@@ -63,6 +63,8 @@ models:
         description: product description
       - name: is_available
         description: boolean to identify if the product is available
+      - name: stock_info
+        description: object with additional information, stock availability included.
       - name: price
         description: product price.
         tests:
