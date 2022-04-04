@@ -108,12 +108,6 @@ models:
         description: image to be used in the thumbnail in the search page
       - name: image_uris
         description: collection of images
-      - name: spider
-        description: spider name.
-        tests:
-          - not_null
-      - name: spider_version
-        description: spider version.
         tests:
           - not_null
       - name: collected_at
