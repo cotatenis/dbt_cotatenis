@@ -1,15 +1,30 @@
-Welcome to your new dbt project!
+# A dbt project for `cotatenis`
 
-### Using the starter project
+`cotatenis` was a search engine for sneaker's best prices in the Brazilian market.  This repository is a proposal to use the data from this project with [dbt](https://www.getdbt.com/) and [snowflake](https://www.snowflake.com/).
 
-Try running the following commands:
-- dbt run
-- dbt test
+## 1. sources (`models/dev/staging/sneakers/`)
+- `raw_farfetch`
+- `raw_gdlp`
+- `raw_kings`
+- `raw_maze`
+- `raw_pineapple`
+- `raw_shop2gether`
 
+## 2. models
+### 2.1 staging (`models/dev/staging/sneakers/`)
+- `stg_kings`
+- `stg_maze`
+- `stg_farfetch`
+- `stg_gdlp`
+- `stg_pineapple`
+- `stg_shop2gether`
+- `stg_lr_kings`
+- `stg_lr_maze`
+- `stg_lr_farfetch`
+- `stg_lr_gdlp`
+- `stg_lr_pineapple`
+- `stg_lr_shop2gether`
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+### 2.2 warehouse (`models/dev/warehouse/sneakers/`)
+- `wh_lr_snkrs`
+- `wh_snkrs_metrics`
