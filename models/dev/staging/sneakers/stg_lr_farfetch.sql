@@ -50,5 +50,5 @@ SELECT
 FROM 
     most_recent_records 
 WHERE true
-qualify ROW_NUMBER() OVER(PARTITION BY sku, size ORDER BY is_available DESC) = 1
+qualify ROW_NUMBER() OVER(PARTITION BY sku, size ORDER BY collected_at DESC) = 1
 ) SELECT * FROM farfetch_last_records
