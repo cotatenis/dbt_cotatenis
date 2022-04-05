@@ -64,3 +64,5 @@ WITH col_format AS (
     , size
     , 'GDLP' as store
     FROM most_recent_records
+    where true
+    qualify ROW_NUMBER() OVER(PARTITION BY sku, size ORDER BY collected_at DESC) = 1
