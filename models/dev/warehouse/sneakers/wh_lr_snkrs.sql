@@ -1,3 +1,5 @@
+{{ config(materialized='table') }}
+
 with cleansing_brand_names as (
     SELECT * FROM {{ ref('stg_lr_farfetch')}}
     UNION ALL

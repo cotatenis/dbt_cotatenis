@@ -1,3 +1,4 @@
+-- test if all records has positive values for the price field
 select
     sku,
     price
