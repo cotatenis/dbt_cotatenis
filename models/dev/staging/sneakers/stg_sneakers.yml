@@ -477,3 +477,42 @@ models:
         description: store name
         tests:
           - not_null
+  - name: stg_lr_sneakers
+    description: Staged last records collected for all stores in cotatenis
+    columns:
+      - name: sku
+        description: product identifier
+        tests:
+          - not_null
+      - name: url
+        description: product source
+        tests:
+          - not_null
+      - name: price
+        description: product price
+        tests:
+          - not_null
+      - name: product
+        description: product name
+        tests:
+          - not_null
+      - name: description
+        description: product description
+      - name: collected_at
+        description: timestamp of data garthering
+      - name: brand
+        description: product brand
+      - name: in_stock
+        description: boolean to identify if the product is available
+        tests:
+          - not_null
+      - name: qty_stock
+        description: number of products available
+      - name: size
+        description: product size
+        tests:
+          - not_null
+      - name: store
+        description: store name
+        tests:
+          - not_null
