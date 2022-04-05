@@ -40,4 +40,8 @@ GROUP BY
     INNER JOIN stg_maze t2
     ON t2.collected_at = t1.collected_at 
     AND t2.sku = t1.sku
-) SELECT * FROM maze_last_records
+) 
+    SELECT * 
+    FROM maze_last_records
+    where true
+    qualify ROW_NUMBER() OVER(PARTITION BY sku, size ORDER BY collected_at DESC) = 1
